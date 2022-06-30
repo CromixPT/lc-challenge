@@ -5,9 +5,7 @@ My main goal is to solve a leet code challenge each day and have this repo to ke
 
 ## Table of Contents
 
-- [LeetCode Challenge](#leetcode-challenge)
-  - [Table of Contents](#table-of-contents)
-    - [Easy difficulty](#easy-difficulty)
+  - [Easy difficulty](#easy-difficulty)
 
 
 ### Easy difficulty
