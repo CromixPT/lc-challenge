@@ -23,21 +23,15 @@ public static class Solution
 {
     public static int[] TwoSum(int[] nums, int target)
     {
-
-        var tmp = new int[2];
+        var dict = new Dictionary<int, int>();
 
         for (int i = 0; i < nums.Length; i++)
         {
-            for (int j = i + 1; j < nums.Length; j++)
-            {
-                if (nums[i] + nums[j] == target)
-                {
-                    tmp[0] = i;
-                    tmp[1] = j;
-                }
+            if (dict.ContainsKey(target - nums[i]))
+                return new int[] { i, dict[target - nums[i]] };
 
-            }
+            dict[nums[i]] = i;
         }
-        return tmp;
+        return new int[2];
     }
 }
